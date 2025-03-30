@@ -197,3 +197,76 @@ Este repositório está em constante atualização, e você pode contribuir com 
 * **Abra um Issue:** Se você tiver alguma dúvida ou quiser reportar um problema, abra um Issue no repositório.
 
 Volte sempre para verificar as atualizações e novas adições à lista! 😉
+
+## Opção: Instalar o Chocolatey
+
+Primeiro, certifique-se de que está a usar um shell administrativo - também pode instalar como não administrador, veja Instalação não administrativa.
+
+Instale com powershell.exe
+
+**NOTA**
+
+Por favor, inspecione [https://community.chocolatey.org/install.ps1](https://community.chocolatey.org/install.ps1) antes de executar qualquer um destes scripts para garantir a segurança. Já sabemos que é seguro, mas deve verificar a segurança e o conteúdo de qualquer script da internet com o qual não esteja familiarizado. Todos estes scripts descarregam um script PowerShell remoto e executam-no na sua máquina. Levamos a segurança muito a sério. Saiba mais sobre os nossos protocolos de segurança.
+
+Com o PowerShell, deve garantir que o Get-ExecutionPolicy não está Restrito. Sugerimos usar Bypass para ignorar a política para obter coisas instaladas ou AllSigned para um pouco mais de segurança.
+
+Execute Get-ExecutionPolicy. Se retornar Restrito, execute Set-ExecutionPolicy AllSigned ou Set-ExecutionPolicy Bypass -Scope Process.
+
+Agora execute o seguinte comando:
+
+```powershell
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+```
+
+Cole o texto copiado no seu shell e pressione Enter.
+
+Espere alguns segundos para que o comando seja concluído.
+
+Se não vir quaisquer erros, está pronto para usar o Chocolatey! Digite choco ou choco -? agora, ou veja Começar para instruções de utilização. 
+
+## Notificação do Repositório de Pacotes da Comunidade
+
+O uso dos pacotes neste site significa que você entende que eles não são suportados ou garantidos de forma alguma. Devido à natureza de um repositório público e à falta de confiabilidade devido aos direitos de distribuição, esses pacotes não devem ser usados ​​como estão para fins organizacionais. Saiba mais. 
+
+[Link do repositório:](https://community.chocolatey.org/packages)
+
+
+```bash
+choco install 3cx
+choco install 7zip.install
+choco install advanced-ip-scanner
+choco install calibre
+choco install clockify
+choco install firefox
+choco install foxitreader
+choco install git.install
+choco install googlechrome
+choco install itunes
+choco install heidisql
+choco install homebank
+choco install k-litecodecpackfull
+choco install local
+choco install microsip
+choco install money-manager-ex
+choco install mozbackup
+choco install office365proplus
+choco install opera
+choco install postman
+choco install protonvpn
+choco install putty.install
+choco install rescuetime
+choco install rufus.install
+choco install rustdesk.install
+choco install spotify
+choco install stremio
+choco install thunderbird
+choco install tor-browser
+choco install ultravnc
+choco install vivaldi.install
+choco install vlc.install
+choco install vscode
+choco install winmtr-redux
+choco install winrar
+choco install zoom
+```
+
