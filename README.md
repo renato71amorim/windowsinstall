@@ -228,7 +228,7 @@ Se não vir quaisquer erros, está pronto para usar o Chocolatey! Digite choco o
 
 O uso dos pacotes neste site significa que você entende que eles não são suportados ou garantidos de forma alguma. Devido à natureza de um repositório público e à falta de confiabilidade devido aos direitos de distribuição, esses pacotes não devem ser usados ​​como estão para fins organizacionais. Saiba mais. 
 
-[Link do repositório:](https://community.chocolatey.org/packages)
+[Link do repositório: https://community.chocolatey.org/packages](https://community.chocolatey.org/packages)
 
 
 ```bash
